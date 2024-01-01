@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Toast notification</title>
+
+<style>
+        .hide{
+            animation: hide-toast .3s linear forwards;
+        }
+        @keyframes hide-toast {
+            0%{
+                transform: translateX(0px);
+            }
+            40%{
+                transform: translateX(3%);
+            }
+            80%{
+                transform:translateX(-5%);
+            }
+            100%{
+                transform:translateX(120%);
+            }
+        }
+</style>
+
+</head>
+<body>
+    <main>
+        <section class="w-full medium:w-max notifications fixed medium:right-2">
+        </section>
+
+        <div class="p-4 flex items-center justify-center gap-[1rem] w-screen h-screen btnGroup">
+
+                <button type="button" class="p-4 bg-blue-950 rounded-md text-white hover:bg-blue-900 duration-[.5s]" id="news">News Not</button>
+                <button type="button" class="p-4 bg-green-950 rounded-md text-white hover:bg-green-900 duration-[.5s]" id="success">Success Not</button>
+                <button type="button" class="p-4 bg-yellow-950 rounded-md text-white hover:bg-yellow-900 duration-[.5s]" id="alert">Alert Not</button>
+                <button type="button" class="p-4 bg-red-950 rounded-md text-white hover:bg-red-900 duration-[.5s]" id="error">Error Not</button>
+        </div>
+</main>
+</body>
+</html>
